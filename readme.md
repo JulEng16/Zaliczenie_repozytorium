@@ -1,3 +1,3 @@
 # pozytorium zaliczenie
-# #Autorzy:
+# Autorzy:
 * Julia Englender
