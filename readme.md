@@ -1,1 +1,3 @@
-Repozytorium zaliczenie
+#Repozytorium zaliczenie
+##Autorzy:
+*Julia Englender
