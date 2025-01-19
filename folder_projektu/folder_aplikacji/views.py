@@ -207,7 +207,7 @@ def person_detail_html(request, id):
                   "folder_aplikacji/person/detail.html",
                   {'person': person})
 
-class StaowiskoMemberView(APIView):
+class StanowiskoMemberView(APIView):
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
 
