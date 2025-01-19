@@ -1,5 +1,5 @@
 from django.db import models
-
+from datetime import date
 # Create your models here.
 
 # deklaracja statycznej listy wyboru do wykorzystania w klasie modelu
@@ -44,7 +44,7 @@ class Osoba(models.Model):
         nazwisko = models.CharField(max_length=80, blank = False, null = False)
         plec = models.IntegerField(choices=PLCIE.choices, default=PLCIE.choices[2][0])
         stanowisko = models.ForeignKey('Stanowisko', on_delete=models.CASCADE)  #models.CASCADE - usuwa wszytskie osoby ze stanowiska
-        data_dodania = models.DateField(auto_now_add = True, editable = False, default=now)
+        data_dodania = models.DateField(default = date.today, blank=False, null=False)
 
         def __str__(self):
             return f'{self.imie} {self.nazwisko}'
