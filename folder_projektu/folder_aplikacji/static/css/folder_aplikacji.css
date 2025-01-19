@@ -1,0 +1,17 @@
+body {
+    background-color: pink;
+}
+h1 {
+    background-color: #260057; /* Zielone tło */
+    color: white; /* Biały tekst */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    padding: 20px 0; /* Górny i dolny padding */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.block-content {
+    margin-bottom: 20px;
+}
